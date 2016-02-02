@@ -22,6 +22,7 @@ body { display: none; }
 header {
   padding-top: 1em;
   text-align: center;
+  display: none;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h1 {
   font-size: 3.5em;
 }
 
-.title-space { margin: 0 0.3em; }
+.title-space { margin: 0 0.1em; }
 
 a {
   color: white;
@@ -40,7 +41,6 @@ a:hover { color: #FDEB9C; }
 
 .social-container > div { transition: transform .3s ease-in-out; }
 .social-container > div:hover { transform: scale(1.1, 1.1); }
-
 .social-container {
   width: 80%;
   position: absolute;
@@ -52,6 +52,11 @@ a:hover { color: #FDEB9C; }
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Make Spotify icon appear same size as Facebook and Soundcloud */
+.icon-spotify {
+  font-size: 1.1em;
 }
 
 footer {
@@ -84,11 +89,11 @@ footer {
   header {
     text-align: left;
     position: absolute;
-    left: 45%;
+    left: 5%;
     padding-top: 0;
   }
 
-  h1 { font-size: 7em; }
+  h1 { font-size: 6.5em; }
 
   .social-container {
     font-size: 7em;
@@ -99,12 +104,12 @@ footer {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /*header { left: 45%; }*/
-  h1 { font-size: 8em; }
+  /*h1 { font-size: 8em; }*/
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  h1 { font-size: 9em; }
+  /*h1 { font-size: 9em; }*/
 
   .social-container { bottom: 0.5em; }
 }
