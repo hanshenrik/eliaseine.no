@@ -45,7 +45,10 @@ a:hover { color: #F4CE6E; }
 
 .social-container a { color: white; }
 .social-container a:hover { color: #F4CE6E; }
-.social-item { transition: transform .3s ease-in-out; }
+.social-item {
+  opacity: 0;
+  transition: transform .3s ease-in-out;
+}
 .social-item:hover { transform: scale(1.1, 1.1); }
 .social-info {
   text-align: center;
