@@ -22,7 +22,6 @@ body { display: none; }
 header {
   padding-top: 1em;
   text-align: center;
-  display: none;
 }
 
 h1 {
@@ -71,11 +70,18 @@ footer {
 }
 
 #info {
+  list-style-type: none;
+  margin: 0;
   padding: 1em;
 }
 #photo-attribution {
   text-align: right;
   padding: 1em;
+}
+#photo-attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #quote {
@@ -98,6 +104,13 @@ footer {
   .social-container {
     font-size: 7em;
     bottom: 1em;
+  }
+  
+  #info li {
+    display: inline-block;
+  }
+  #info > li:not(:last-child):after {
+    content: ' //\00a0';
   }
 }
 
