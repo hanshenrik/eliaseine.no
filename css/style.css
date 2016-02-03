@@ -45,8 +45,15 @@ a:hover { color: #F4CE6E; }
 
 .social-container a { color: white; }
 .social-container a:hover { color: #F4CE6E; }
-.social-container > div { transition: transform .3s ease-in-out; }
-.social-container > div:hover { transform: scale(1.1, 1.1); }
+.social-item { transition: transform .3s ease-in-out; }
+.social-item:hover { transform: scale(1.1, 1.1); }
+.social-info {
+  text-align: center;
+  /*margin: -10px auto;*/
+  font-size: 12px;
+  min-height: 15px;
+}
+
 .social-container {
   position: absolute;
   width: 80%;
@@ -73,7 +80,7 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  font-size: small;
+  font-size: 12px;
 }
 
 #info {
@@ -104,6 +111,13 @@ footer {
   .social-container {
     font-size: 7em;
     bottom: 1em;
+  }
+  .social-item:hover .social-info {
+    opacity: 1;
+  }
+  .social-info {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
   }
   
   #info li {
