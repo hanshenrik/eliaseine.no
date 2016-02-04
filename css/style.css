@@ -21,17 +21,15 @@ body {
 body { display: none; }
 
 header {
-  position: absolute;
-  width: 40%;
-  right: 0;
-
-  display: flex;
-  justify-content: center;
+  text-align: right;
+  padding: 3%;
 }
 
-h1 {
+#title {
   font-family: 'Give You Glory';
-  font-size: 3.5em;
+  font-size: 1.5em;
+  opacity: 0.17;
+  margin: 0;
 }
 
 .title-space { margin: 0 0.1em; }
@@ -59,9 +57,9 @@ a:hover { color: #F4CE6E; }
 
 .social-container {
   position: absolute;
-  width: 80%;
+  width: 72%;
   right: 0;
-  bottom: 1.5em;
+  bottom: 1.7em;
   font-size: 3.5em;
   
   /* TODO: add prefix-mixin */
@@ -109,7 +107,8 @@ footer {
 /*** MEDIA QUERIES ***/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  h1 { font-size: 6em; }
+  header { padding: 5%; }
+  #title { font-size: 4.5em; }
 
   .social-container {
     font-size: 7em;
@@ -133,10 +132,11 @@ footer {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  #title { font-size: 5.5em; }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-  .social-container { bottom: 0.5em; }
+  #title { font-size: 6.5em; }
+  .social-container { bottom: 0.3em; }
 }
