@@ -1,4 +1,7 @@
 
+.icon-menu:before { content: '\e800'; } /* '' */
+.icon-cancel:before { content: '\e801'; } /* '' */
+.icon-dot-3:before { content: '\e802'; } /* '' */
 .icon-facebook-circled:before { content: '\e805'; } /* '' */
 .icon-soundcloud-circled:before { content: '\e806'; } /* '' */
 .icon-spotify:before { content: '\e807'; } /* '' */

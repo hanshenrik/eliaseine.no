@@ -20,7 +20,15 @@ body {
 
 body { display: none; }
 
+a {
+  color: #FDEB9C;
+  transition: color .3s ease;
+  text-decoration: none;
+}
+a:hover { color: #F4CE6E; }
+
 header {
+  float: right;
   text-align: right;
   padding: 3%;
 }
@@ -31,15 +39,24 @@ header {
   opacity: 0.17;
   margin: 0;
 }
-
 .title-space { margin: 0 0.1em; }
 
-a {
-  color: #FDEB9C;
-  transition: color .3s ease;
-  text-decoration: none;
+#more-button {
+  float: left;
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
-a:hover { color: #F4CE6E; }
+#more-content {
+  display: none;
+  clear: left;
+  width: auto;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
 
 .social-container a { color: white; }
 .social-container a:hover { color: #F4CE6E; }
@@ -69,9 +86,7 @@ a:hover { color: #F4CE6E; }
 }
 
 /* Make Spotify icon appear same size as Facebook and Soundcloud */
-.icon-spotify {
-  font-size: 1.1em;
-}
+.icon-spotify { font-size: 1.1em; }
 
 footer {
   width: 100%;
@@ -99,35 +114,26 @@ footer {
   right: 0;
 }
 
-#quote {
-  font-size: 2em;
-  padding: 5em;
-}
 
 /*** MEDIA QUERIES ***/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header { padding: 5%; }
   #title { font-size: 4.5em; }
+  #more-content { width: 40%; }
 
   .social-container {
     font-size: 7em;
     bottom: 1em;
   }
-  .social-item:hover .social-info {
-    opacity: 1;
-  }
+  .social-item:hover .social-info { opacity: 1; }
   .social-info {
     opacity: 0;
     transition: opacity .5s ease-in-out;
   }
   
-  #info li {
-    display: inline-block;
-  }
-  #info > li:not(:last-child):after {
-    content: ' //\00a0';
-  }
+  #info > li { display: inline-block; }
+  #info > li:not(:last-child):after { content: ' //\00a0'; }
 }
 
 /* Medium devices (desktops, 992px and up) */
