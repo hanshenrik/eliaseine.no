@@ -27,7 +27,7 @@ $(window).on( 'load' , function() {
   $( '.social-item' ).each( function(i) {
     var item = $(this);
     setTimeout( function() {
-       item.fadeInOpacity()
+       item.fadeInOpacity();
    }, i * normalDelay);
   });
 });
