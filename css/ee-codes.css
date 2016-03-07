@@ -1,7 +1,7 @@
 
-.icon-menu:before { content: '\e800'; } /* '' */
-.icon-cancel:before { content: '\e801'; } /* '' */
-.icon-dot-3:before { content: '\e802'; } /* '' */
-.icon-facebook-circled:before { content: '\e805'; } /* '' */
-.icon-soundcloud-circled:before { content: '\e806'; } /* '' */
-.icon-spotify:before { content: '\e807'; } /* '' */
+.icon-paper-plane:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-mail-circled:before { content: '\e808'; } /* '' */
+.icon-spotify:before { content: '\e80c'; } /* '' */
+.icon-facebook-circled:before { content: '\e80e'; } /* '' */
+.icon-soundcloud-circled:before { content: '\e80f'; } /* '' */
