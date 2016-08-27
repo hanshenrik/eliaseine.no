@@ -11,13 +11,10 @@ jQuery.fn.extend({
 $(document).ready( function() {
   $( '#current-year' ).text( (new Date).getFullYear() );
 
-  $( '#more-button' ).click( function() {
-    $( this ).find( '.icon' ).fadeOut( quickDelay, function() {
-      $( this )
-        .toggleClass( 'icon-dot-3 icon-cancel' )
-        .fadeIn( quickDelay );
-    });
-    $( '#more-content' ).slideToggle();
+  $( '#lyrics-button' ).click( function(e) {
+    e.preventDefault();
+    $( '.social-container' ).toggleClass( 'hidden' );
+    $( '.lyrics-container' ).slideToggle(1000);
   });
 });
 
@@ -30,4 +27,12 @@ $(window).on( 'load' , function() {
        item.fadeInOpacity();
    }, i * normalDelay);
   });
+  
+  $( '.accordion-item' ).click( function () {
+    $(this).find( '.accordion-body' ).slideToggle(1000, function() {
+      // $('html, body').animate({
+      //   scrollTop: $(this).offset().top - 10
+      // }, 200);
+    });
+  })
 });
