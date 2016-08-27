@@ -15,9 +15,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: none;
 
   min-height: 100%;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +58,7 @@ header {
 .social-item:hover { transform: scale(1.1, 1.1); }
 .social-info {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   min-height: 15px;
 }
 
@@ -77,21 +77,9 @@ header {
   transition: all 1s ease-in-out;
 }
 
-.close-button {
-  position: fixed;
-  float:right;
-  margin-top: -14px;
-  margin-right: -14px;
-  
-  font-size: 2em;
-
-  z-index: 10;
-
-  transition: all 1s ease-in-out,
-              transform 0.3s ease-in-out,
-              color 0.3s ease-in-out;
+#lyrics-button.active a {
+  color: #F4CE6E;
 }
-.close-button:hover { transform: scale(1.1, 1.1); }
 
 .lyrics-container {
   display: none;
@@ -99,20 +87,51 @@ header {
   align-self: center;
   width: 90%;
 }
+.lyrics {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+}
 
 .accordion {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.accordion-item {
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  margin: 10px;
+  font-size: 1.5em;
   cursor: pointer;
+
+  margin-top: 4px;
+  margin-bottom: 1px;
+  padding: 20px;
+  border-radius: 0 6px 0 0;
+
+
+  transition: all 0.2s ease-in-out;
 }
-.accordion-header { font-size: 2em; }
-.accordion-body { display: none; }
+.accordion-header:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.accordion-header a {
+  color: white;
+  transition: all .3s ease-in-out;
+}
+.accordion-header a:hover {
+  color: #F4CE6E;
+  transform: scale(1.1, 1.1); 
+}
+.accordion-body {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  padding: 20px;
+
+  border-radius: 0 0 6px 0;
+}
 
 /* Make icons appear same size */
 .icon-spotify { font-size: 1.15em; }
@@ -124,7 +143,7 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
 
-  font-size: 11px;
+  font-size: 13px;
 }
 
 #info {
@@ -145,12 +164,16 @@ footer {
   header { padding: 5%; }
   #title { font-size: 4.5em; }
 
-  .lyrics-container { width: 60%; }
+  .lyrics-container { width: 50%; }
   .social-container { font-size: 6em; }
   .social-item:hover .social-info { opacity: 1; }
   .social-info {
     opacity: 0;
     transition: opacity .5s ease-in-out;
+  }
+
+  .accordion-header {
+    font-size: 2em;
   }
   
   #info > li { display: inline-block; }
@@ -165,5 +188,6 @@ footer {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #title { font-size: 6.5em; }
+  .lyrics-container { width: 40%; }
   .social-container { font-size: 7em; }
 }

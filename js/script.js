@@ -13,14 +13,13 @@ $(document).ready( function() {
 
   $( '#lyrics-button' ).click( function(e) {
     e.preventDefault();
+    $( this ).toggleClass( 'active' );
     $( '.social-container' ).toggleClass( 'hidden' );
-    $( '.lyrics-container' ).slideToggle(1000);
+    $( '.lyrics-container' ).slideToggle( normalDelay );
   });
 });
 
 $(window).on( 'load' , function() {
-  $( 'body' ).fadeIn(1000);
-
   $( '.social-item' ).each( function(i) {
     var item = $(this);
     setTimeout( function() {
@@ -28,11 +27,7 @@ $(window).on( 'load' , function() {
    }, i * normalDelay);
   });
   
-  $( '.accordion-item' ).click( function () {
-    $(this).find( '.accordion-body' ).slideToggle(1000, function() {
-      // $('html, body').animate({
-      //   scrollTop: $(this).offset().top - 10
-      // }, 200);
-    });
+  $( '.accordion-header' ).click( function () {
+    $(this).next( '.accordion-body' ).slideToggle( normalDelay );
   })
 });
