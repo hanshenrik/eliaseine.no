@@ -1,7 +1,9 @@
 
 .icon-book-open:before { content: '\e800'; } /* '' */
+.icon-book:before { content: '\e801'; } /* '' */
 .icon-left-circle:before { content: '\e802'; } /* '' */
 .icon-cancel-circle:before { content: '\e803'; } /* '' */
 .icon-mail-circled:before { content: '\e808'; } /* '' */
 .icon-spotify:before { content: '\e80c'; } /* '' */
 .icon-facebook-circled:before { content: '\e80e'; } /* '' */
+.icon-soundcloud:before { content: '\f1be'; } /* '' */
