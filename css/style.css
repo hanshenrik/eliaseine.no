@@ -19,8 +19,13 @@ body {
 
   min-height: 100%;
   
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -36,6 +41,7 @@ pre {
 }
 
 header {
+  flex-grow: 99;
   text-align: right;
   padding: 3%;
 }
@@ -49,8 +55,13 @@ header {
 .title-space { margin: 0 0.1em; }
 
 .bottom-container {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -104,6 +115,10 @@ header {
 }
 .accordion-header {
   display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 
   background-color: rgba(0, 0, 0, 0.7);
@@ -145,6 +160,10 @@ header {
 
 footer {
   display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   align-items: flex-end;
 
