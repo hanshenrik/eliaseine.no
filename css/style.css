@@ -9,12 +9,13 @@ body {
   font-family: 'Source Sans Pro';
   font-weight: 300;
   color: white;
-  
-  background: url(../img/elias-eine-1920-90.jpg) no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
+  background-image: url(../img/elias-eine-1920-90.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  background-color: #1E0000;
 
   min-height: 100%;
   
@@ -29,6 +30,10 @@ a {
   text-decoration: none;
 }
 a:hover { color: #F4CE6E; }
+
+pre {
+  white-space: pre-wrap;
+}
 
 header {
   text-align: right;
