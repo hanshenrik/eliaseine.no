@@ -7,12 +7,6 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "51727ca007aa35ceabcaffc28934faee",
-      "css": "book-open",
-      "code": 59392,
-      "src": "entypo"
-    },
-    {
       "uid": "fb4794d89b77ab712ad56c0dc4c76c6b",
       "css": "spotify",
       "code": 59404,
@@ -29,18 +23,6 @@
       "css": "mail-circled",
       "code": 59400,
       "src": "elusive"
-    },
-    {
-      "uid": "7e092c82e9a758b6e95297007969aac1",
-      "css": "left-circle",
-      "code": 59394,
-      "src": "websymbols"
-    },
-    {
-      "uid": "15739f3032c2aa3df67efc96b3ffef56",
-      "css": "cancel-circle",
-      "code": 59395,
-      "src": "websymbols"
     },
     {
       "uid": "48b79f27e4798f23bafa07b55dbe5b73",
