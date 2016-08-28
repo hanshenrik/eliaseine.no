@@ -28,6 +28,6 @@ $(window).on( 'load' , function() {
   });
   
   $( '.accordion-header' ).click( function () {
-    $(this).next( '.accordion-body' ).slideToggle( normalDelay );
+    $(this).next( '.accordion-body' ).stop().slideToggle( normalDelay );
   })
 });
